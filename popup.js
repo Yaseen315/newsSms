@@ -1,6 +1,9 @@
 function click(e) {
-  var url = window.location.href;
-  console.log(url);
+ chrome.tabs.query({'active': true, 'windowId': chrome.windows.WINDOW_ID_CURRENT},
+   function(tabs){
+     page = tabs[0].url;
+   }
+);
 }
 
 document.addEventListener('DOMContentLoaded', function () {
