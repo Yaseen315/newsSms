@@ -18,6 +18,10 @@
         display: flex;
         justify-content: space-between;
       }
+
+      input {
+       margin : 5%;
+     }
     </style>
 
     <!--
@@ -30,16 +34,15 @@
   </head>
 
   <body>
-    <h1>Background Color Changer</h1>
+    <h1>Send this article to your phone</h1>
     <div id="container">
-      <span>Choose a color</span>
-      <select id="dropdown">
-        <option selected disabled hidden value=''></option>
-        <option value="white">White</option>
-        <option value="pink">Pink</option>
-        <option value="green">Green</option>
-        <option value="yellow">Yellow</option>
-      </select>
+      <form method="POST">
+       <label for="number">Please enter your number: </label>
+       <br>
+       <input type="text" name="number"></input>
+       <br>
+       <button id="mybutton">Submit</button>
+     </form>
     </div>
   </body>
 </html>

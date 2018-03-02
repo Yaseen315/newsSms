@@ -1,12 +1,14 @@
 {
- "manifest_version": 2,
-"name": "News Text",
- "description": "This extention sends news via SMS to the user",
- "version": "1.0",
-"browser_action":{
- "default_icon":"iphone.png",
- "default_popup": "popup.html",
- "default_title": "SMS"
-  }
+  "name": "News Text",
+  "description": "This extention sends news via SMS to the user",
+  "version": "1.0",
+  "permissions": [
+    "activeTab"
+  ],
+  "browser_action": {
+    "default_title": "SMS",
+    "default_icon": "iphone.png",
+    "default_popup": "popup.html"
+  },
+  "manifest_version": 2
 }
-
