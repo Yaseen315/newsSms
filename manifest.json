@@ -1,6 +1,6 @@
 {
   "name": "News Text",
-  "description": "This extention sends news via SMS to the user",
+  "description": "This extension sends news via SMS to the user",
   "version": "1.0",
   "permissions": [
     "activeTab"
